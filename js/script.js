@@ -26,3 +26,44 @@ const createPet = function (name, species) {
   };
   return pet;
 };
+
+// create new objects
+const poppy = createPet("Poppy", "pekingese");
+
+const charlie = createPet("Charlie", "himalayan cat");
+
+const ruby = createPet("Ruby", "rex rabbit");
+
+const milo = createPet("Milo", "affenpinscher");
+
+const theo = createPet("Theo", "american shorthair");
+
+const nala = createPet("Nala", "british shorthair");
+
+const penny = createPet("Penny", "golden hamster");
+
+const kiwi = createPet("Kiwi", "lionhead rabbit");
+
+const olive = createPet("Olive", "alaskan malamute");
+
+const winston = createPet("Winston", "brussels griffon");
+
+// verify objects and methods
+
+// console.log(poppy, charlie, ruby, milo, theo, nala, penny, kiwi, olive, winston);
+
+// call each method to make sure they both work
+/*
+poppy.sleep();
+charlie.play(); 
+*/
+
+// console.log(poppy, charlie);
+
+// isTired value for Poppy has changed from 5 to 1 because calling sleep() changes the isTired value to 1
+// isTired value for Charlie has increased from 5 to 6 because play() adds 1 to the isTired value when run
+
+// change the value of the isTired property for certain pet objects
+ruby.isTired = 8;
+theo.isTired = 9;
+penny.isTired = 10;
