@@ -82,3 +82,20 @@ const allPets = [
 ];
 
 // console.log(allPets);
+
+// display pets in the browser
+const showPets = function (petArray) {
+  // grab the pets variable that’s selecting the “all-pets” unordered list, and use innerHTML to set pets to an empty string --> this will clear the list whenever showPets is run, so it can update with fresh info
+  pets.innerHTML = "";
+  // loop over petArray
+  for (let pet of petArray) {
+    let status = "ready to play!"; // use the let keyword to declare the status variable because you'll reassign the value
+    if (pet.isTired >= 7) {
+      status = "sleeping.";
+    }
+    const li = document.createElement("li");
+    // use innerHTML to add the pet name, species, and status to the list item
+    li.innerHTML = `<span class="pet-name">${pet.name}</span> the ${pet.species} is ${status}`;
+    pets.append(li);
+  }
+};
