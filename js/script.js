@@ -67,3 +67,18 @@ charlie.play();
 ruby.isTired = 8;
 theo.isTired = 9;
 penny.isTired = 10;
+
+const allPets = [
+  poppy,
+  charlie,
+  ruby,
+  milo,
+  theo,
+  nala,
+  penny,
+  kiwi,
+  olive,
+  winston,
+];
+
+// console.log(allPets);
